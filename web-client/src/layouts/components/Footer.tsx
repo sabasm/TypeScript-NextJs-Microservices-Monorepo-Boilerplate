@@ -2,17 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
-   background-color: ${props => props.theme.colors.background.primary};
-   grid-area: footer;
-  // Add your styles here
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    // Add styles for screens larger than the md breakpoint
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.lg}) {
-    // Add styles for screens larger than the lg breakpoint
-  }
 `;
 
 /**

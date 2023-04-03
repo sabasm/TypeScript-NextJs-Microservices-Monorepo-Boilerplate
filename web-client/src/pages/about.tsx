@@ -1,12 +1,12 @@
 import React from 'react';
-import MultiPurposeLayout from '@/layouts/MultiPurposeLayout';
+import MainContent from '@/layouts/components/MainContent';
 
 
 export default function AboutPage() {
   return (
-    <MultiPurposeLayout header={<h1>My App</h1>} footer={<p>&copy; My App</p>}>
+    <MainContent>
       <h2>About Us</h2>
       <p>We are a company that...</p>
-    </MultiPurposeLayout>
+    </MainContent>
   );
 }

@@ -1,9 +1,9 @@
-import UserLayout from '@/layouts/UserLayout'
 import React from 'react'
+import MainContent from '@/layouts/components/MainContent';
 
 export default function ContactPage() {
   return (
-    <UserLayout header={<h1>My App</h1>} footer={<p>&copy; My App</p>}>
+    <MainContent>
       <h2>Contact Us</h2>
       <form action='/contact' method='post'>
         <label htmlFor='name'>Name:</label>
@@ -20,6 +20,6 @@ export default function ContactPage() {
         <br />
         <input type='submit' value='Submit' />
       </form>
-    </UserLayout>
+    </MainContent>
   )
 }

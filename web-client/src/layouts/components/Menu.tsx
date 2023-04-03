@@ -2,12 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MenuWrapper = styled.nav`
-background-color:${({ theme: { colors: { extra: { primary } } } }) => primary};
-/* grid-area:menu; */
-
-@media(min-width:${({ theme: { breakpoints: { md } } }) => md}){
-display:none;
-}
 `;
 
 /**

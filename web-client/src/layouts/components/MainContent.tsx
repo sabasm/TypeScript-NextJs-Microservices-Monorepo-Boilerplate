@@ -2,19 +2,15 @@ import React from 'react';
 import styled from 'styled-components';
 
 const MainContentWrapper = styled.main`
-  background-color: ${props => props.theme.colors.background.quaternary};
-  flex-grow:2;
-  /* grid-area: mainContent; */
-  // Add your styles here
-
-  @media (min-width: ${props => props.theme.breakpoints.md}) {
-    // Add styles for screens larger than the md breakpoint
-  }
-
-  @media (min-width: ${props => props.theme.breakpoints.lg}) {
-    // Add styles for screens larger than the lg breakpoint
-   }
-`;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100vh;
+  background-color: ${({ theme }) => theme.backgroundColor};
+  color: ${({ theme }) => theme.primaryColor};
+  `;
 
 interface HeaderProps {
   children: React.ReactNode;

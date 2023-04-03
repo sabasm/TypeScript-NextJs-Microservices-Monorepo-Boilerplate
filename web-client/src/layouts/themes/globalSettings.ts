@@ -1,25 +1,7 @@
 export const sharedStyles = {
   padding: '10px',
   margin: '5px',
-  backgroundColor: 'green',
 }
-
-export const breakpoints = {
-  xs: '320px',
-  sm: '480px',
-  md: '768px',
-  lg: '1024px',
-  xl: '1200px'
-};
-
-//OPTIONAL
-// export const breakpoints = {
-//   xs: '480px',
-//   sm: '768px',
-//   md: '992px',
-//   lg: '1200px',
-//   xl: '1600px',
-// };
 
 const responsiveStyles = {
   xs: {
@@ -51,7 +33,6 @@ const responsiveStyles = {
 
 const globalSettings = {
   responsiveStyles,
-  breakpoints,
   sharedStyles
 };
 
