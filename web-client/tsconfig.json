@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/button.test.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/button.test.ts", "jest.config.ts"],
   "exclude": ["node_modules"]
 }

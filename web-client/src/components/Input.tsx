@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
 }
 

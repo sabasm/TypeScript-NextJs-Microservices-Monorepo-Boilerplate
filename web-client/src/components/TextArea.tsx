@@ -1,4 +1,4 @@
-import { sharedStyles } from '@/layouts/themes/globalSettings';
+import { sharedStyles } from './../layouts/themes/globalSettings';
 import React, { ChangeEvent } from 'react';
 import styled from 'styled-components';
 import { mockOnChange } from './mockFunctions/inputs';
@@ -10,11 +10,11 @@ const TextAreaStyle = styled.textarea`
   resize: none;
 `;
 
-interface Props extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   onChange?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const TextArea = ({ onChange = mockOnChange, ...rest }: Props) => (
+const TextArea = ({ onChange = mockOnChange, ...rest }: TextAreaProps) => (
   <TextAreaStyle onChange={onChange} {...rest} />
 );
 

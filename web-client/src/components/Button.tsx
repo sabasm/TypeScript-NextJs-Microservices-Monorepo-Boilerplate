@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { mockHandleClick } from './mockFunctions/inputs';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;
 }
 

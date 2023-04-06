@@ -31,7 +31,7 @@ const responsiveStyles = {
   },
 };
 
-const globalSettings = {
+export const globalSettings = {
   responsiveStyles,
   sharedStyles
 };
