@@ -16,7 +16,7 @@ const Home = (props: HomeProps) => {
         Click me
       </Button>
       <Input label="Name" />
-      <TextArea />
+      <TextArea label='Description' />
     </MainContent>
   )
 }

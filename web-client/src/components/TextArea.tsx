@@ -2,6 +2,7 @@ import { sharedStyles } from './../layouts/themes/globalSettings';
 import React, { ChangeEvent } from 'react';
 import styled from 'styled-components';
 import { mockOnChange } from './mockFunctions/inputs';
+import InputWrapper from './InputWrapper';
 
 const TextAreaStyle = styled.textarea`
   ${sharedStyles};
@@ -11,11 +12,14 @@ const TextAreaStyle = styled.textarea`
 `;
 
 export interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  label?: string;
   onChange?: (event: ChangeEvent<HTMLTextAreaElement>) => void;
 }
 
-const TextArea = ({ onChange = mockOnChange, ...rest }: TextAreaProps) => (
-  <TextAreaStyle onChange={onChange} {...rest} />
+const TextArea = ({ label, onChange = mockOnChange, ...rest }: TextAreaProps) => (
+  <InputWrapper label={label}>
+    <TextAreaStyle onChange={onChange} {...rest} />
+  </InputWrapper>
 );
 
 export default TextArea;

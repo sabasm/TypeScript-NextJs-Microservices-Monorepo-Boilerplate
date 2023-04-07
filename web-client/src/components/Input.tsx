@@ -1,15 +1,12 @@
 import { sharedStyles } from '@/layouts/themes/globalSettings';
 import React from 'react';
 import styled from 'styled-components';
-
+import InputWrapper from './InputWrapper';
+import { mockOnChange } from './mockFunctions/inputs';
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
 }
-
-const InputWrapper = styled.div`
-  ${sharedStyles};
-`;
 
 const InputField = styled.input`
   ${sharedStyles};
@@ -18,10 +15,9 @@ const InputField = styled.input`
   border-radius: 5px;
 `;
 
-const Input = ({ label, ...rest }: InputProps) => (
-  <InputWrapper>
-    {label && <label>{label}</label>}
-    <InputField {...rest} />
+const Input = ({ label, onChange = mockOnChange, ...rest }: InputProps) => (
+  <InputWrapper label={label}>
+    <InputField onChange={onChange} {...rest} />
   </InputWrapper>
 );
 

@@ -8,6 +8,7 @@ const MainContentWrapper = styled.main`
   justify-content: start;
   width: 100%;
   height: 100vh;
+  max-height: 2560px;
   background-color: ${({ theme }) => theme.backgroundColor};
   color: ${({ theme }) => theme.primaryColor};
   `;
