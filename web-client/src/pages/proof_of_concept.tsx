@@ -9,8 +9,7 @@ export interface testComponentsPageProps {}
 const TestComponentsPage = (props: testComponentsPageProps) => {
   return (
     <MainContent>
-      <h1>Homepage</h1>
-      <h2>this is an h2</h2>
+      <h1 id="test">this is a page where i'm checking components and stuff</h1>
       <Button>Click me</Button>
       <Input label="Name" />
       <TextArea label="Description" />
