@@ -6,7 +6,7 @@ import { MainContent } from '@/layout/components';
 
 export interface testComponentsPageProps {}
 
-const testComponentsPage = (props: testComponentsPageProps) => {
+const TestComponentsPage = (props: testComponentsPageProps) => {
   return (
     <MainContent>
       <h1>Homepage</h1>
@@ -18,4 +18,4 @@ const testComponentsPage = (props: testComponentsPageProps) => {
   );
 };
 
-export default testComponentsPage;
+export default TestComponentsPage;
