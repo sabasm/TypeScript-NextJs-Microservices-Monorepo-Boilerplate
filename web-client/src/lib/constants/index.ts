@@ -1,0 +1,3 @@
+import { PUBLIC_PAGES, PRIVATE_PAGES } from "./PAGES";
+
+export { PUBLIC_PAGES, PRIVATE_PAGES };
