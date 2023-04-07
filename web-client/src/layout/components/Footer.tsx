@@ -6,6 +6,7 @@ const FooterWrapper = styled.footer`
   ${flexColumnsCenterCenter};
   color: ${({ theme }) => theme.primaryColor};
   height: 10rem;
+  /* width: 100%; */
   background-color: black;
 `;
 

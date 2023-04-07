@@ -41,6 +41,28 @@ export const flexRowsCenterRight = css`
   align-items: end;
   justify-content: center;
 `;
+export const flexRowsCenterTop = css`
+  ${flexRows}
+  align-items: center;
+  justify-content: start;
+`;
+export const flexRowsCenterBottom = css`
+  ${flexRows}
+  align-items: center;
+  justify-content: end;
+`;
+
+export const flexRowsSpaceBetween = css`
+  ${flexRows}
+  align-items: center;
+  justify-content: space-between;
+`;
+
+export const flexRowsSpaceAround = css`
+  ${flexRows}
+  align-items: center;
+  justify-content: space-around;
+`;
 
 const navbarHeight = "var(--navbar-height)";
 
@@ -51,3 +73,4 @@ export const minMaxPageLimits = css`
   min-height: calc(720px - ${navbarHeight});
   min-width: 320px;
 `;
+export const fillParentContainer = css``;

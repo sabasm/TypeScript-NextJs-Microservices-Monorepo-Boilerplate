@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { flexColumnsCenterTop, minMaxPageLimits, flexColumnsCenterBottom } from '../themes/mixins';
+import { flexColumnsCenterTop, minMaxPageLimits } from '../themes/mixins';
 
 const MainContentWrapper = styled.main`
-  ${minMaxPageLimits};
   ${flexColumnsCenterTop};
   background-color: ${({ theme }) => theme.backgroundColor};
   color: ${({ theme }) => theme.primaryColor};
+  flex: 8;
+  height: 100%;
 `;
 
 interface HeaderProps {
