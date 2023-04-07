@@ -1,7 +1,7 @@
 import { sharedStyles } from '@/layout/themes/globalSettings';
 import React from 'react';
 import styled from 'styled-components';
-import { mockHandleClick } from './mockFunctions/inputs';
+import { mockHandleClick } from '../../__mocks__/inputs';
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick?: () => void;

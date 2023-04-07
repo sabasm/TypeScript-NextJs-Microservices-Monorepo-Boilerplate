@@ -1,7 +1,7 @@
 import { sharedStyles } from '../layout/themes/globalSettings';
 import React, { ChangeEvent } from 'react';
 import styled from 'styled-components';
-import { mockOnChange } from './mockFunctions/inputs';
+import { mockOnChange } from '../../__mocks__/inputs';
 import InputWrapper from './InputWrapper';
 
 const TextAreaStyle = styled.textarea`
