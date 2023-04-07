@@ -2,7 +2,7 @@ import { sharedStyles } from '@/layout/themes/globalSettings';
 import React from 'react';
 import styled from 'styled-components';
 import InputWrapper from './InputWrapper';
-import { mockOnChange } from './mockFunctions/inputs';
+import { mockOnChange } from '../../__mocks__/inputs';
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
