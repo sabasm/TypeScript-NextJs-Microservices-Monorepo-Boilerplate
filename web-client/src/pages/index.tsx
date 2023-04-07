@@ -1,24 +1,15 @@
-import React from 'react'
-import MainContent from '@/layouts/components/MainContent'
-import Button from '@/components/Button'
-import Input from '@/components/Input'
-import TextArea from '@/components/TextArea'
+import React from 'react';
+import Link from 'next/link';
+import { Hero } from '@/layout/components';
 
-export interface HomeProps {
-}
-
-const Home = (props: HomeProps) => {
+const Home = () => {
   return (
-    <MainContent>
+    <Hero>
       <h1>Homepage</h1>
       <h2>this is an h2</h2>
-      <Button>
-        Click me
-      </Button>
-      <Input label="Name" />
-      <TextArea label='Description' />
-    </MainContent>
-  )
-}
+      <Link href="/test">Go to Test page</Link>
+    </Hero>
+  );
+};
 
-export default Home
+export default Home;

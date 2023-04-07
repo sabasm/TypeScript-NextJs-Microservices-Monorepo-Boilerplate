@@ -1,5 +1,5 @@
 import React from 'react'
-import MainContent from '@/layouts/components/MainContent';
+import MainContent from '@/layout/components/MainContent';
 
 export default function ContactPage() {
   return (

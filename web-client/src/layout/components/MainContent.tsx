@@ -1,17 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import { flexColumnsCenterTop, minMaxPageLimits, flexColumnsCenterBottom } from '../themes/mixins';
 
 const MainContentWrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  height: 100vh;
-  max-height: 2560px;
+  ${minMaxPageLimits};
+  ${flexColumnsCenterTop};
   background-color: ${({ theme }) => theme.backgroundColor};
   color: ${({ theme }) => theme.primaryColor};
-  `;
+`;
 
 interface HeaderProps {
   children: React.ReactNode;

@@ -1,4 +1,4 @@
-import { sharedStyles } from './../layouts/themes/globalSettings';
+import { sharedStyles } from '../layout/themes/globalSettings';
 import React, { ChangeEvent } from 'react';
 import styled from 'styled-components';
 import { mockOnChange } from './mockFunctions/inputs';
