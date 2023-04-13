@@ -1,0 +1,12 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/sabasm/TypeScript-NextJs-Microservices-Monorepo-Boilerplate.git",
+  "author": "Sabas Mendivil <user.name>",
+  "license": "MIT",
+  "workspaces": [
+    "web-client",
+    "auth-service"
+  ]
+}
