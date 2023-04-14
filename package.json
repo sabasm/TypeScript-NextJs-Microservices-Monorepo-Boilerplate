@@ -1,0 +1,19 @@
+{
+  "name": "monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "repository": "https://github.com/sabasm/TypeScript-NextJs-Microservices-Monorepo-Boilerplate.git",
+  "author": "Sabas Mendivil <user.name>",
+  "license": "MIT",
+  "workspaces": [
+    "web-client",
+    "auth-service"
+  ],
+  "scripts": {
+    "dev": "concurrently --prefix \"[{name}]\" --names \"Web Client,Auth Services\" --prefix-colors cyan,green \"yarn workspace web-client dev\" \"yarn workspace auth-service dev\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

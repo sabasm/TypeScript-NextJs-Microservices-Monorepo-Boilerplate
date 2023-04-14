@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "events": {
+    "quit": "echo 'nodemon quit'",
+    "SIGTERM": "echo 'SIGTERM received'"
+  }
+}
