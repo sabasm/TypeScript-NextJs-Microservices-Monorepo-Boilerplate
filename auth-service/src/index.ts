@@ -42,3 +42,9 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 app.listen(config.port, () => {
   logger.info(`Server is listening to your requests...`);
 });
+
+// Gracefully SIGINT
+process.on("SIGINT", () => {
+  logger.info("Shutting down...");
+  process.exit(0);
+});
