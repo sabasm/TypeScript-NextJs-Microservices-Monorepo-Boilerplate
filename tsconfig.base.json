@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "target": "es6",
+  "outDir": "dist",
+  "esModuleInterop": true,
+  "resolveJsonModule": true,
+  "allowJs": true,
+  "strict": true,
+  "forceConsistentCasingInFileNames": true,
+  "include": [
+    "**/*.ts",
+    "jest.config.js",
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+}
