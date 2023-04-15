@@ -1,4 +1,6 @@
 import config from "../config";
+import { FormatFn } from "morgan";
+import { Request, Response } from "express";
 import winston from "winston";
 
 const logger = winston.createLogger({
@@ -19,4 +21,10 @@ if (config.nodeEnv !== "production") {
   );
 }
 
-export default logger;
+const customFormat: FormatFn<Request, Response> = (req, res) => {
+  const message = `logger called`;
+  return message;
+};
+
+//export default logger and also export customFormat
+export { logger, customFormat };

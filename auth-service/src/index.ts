@@ -1,30 +1,14 @@
 "use strict";
 import config from "./config";
-import express, { Express, Request, Response, NextFunction } from "express";
-import cors from "cors";
-import helmet from "helmet";
-import morgan, { FormatFn } from "morgan";
-import bodyParser from "body-parser";
-import compression from "compression";
-import logger from "./utils/logger";
+import { globalMiddlewares } from "./middlewares";
+import { logger } from "./utils/logger";
 
-const customFormat: FormatFn<Request, Response> = (req, res) => {
-  const message = `${req.method} ${req.url} ${
-    res.statusCode
-  } ${new Date().toLocaleString("en-US", { timeZone: "America/Los_Angeles" })}`;
-  logger.info(message);
-  return message;
-};
+import express, { Express, Request, Response, NextFunction } from "express";
 
 const app: Express = express();
 
-// Middleware
-app.use(cors());
-app.use(helmet());
-app.use(compression());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(morgan(customFormat));
+// Add global middlewares to app
+Object.values(globalMiddlewares).forEach((mw) => app.use(mw));
 
 // Routes
 app.get("/", (req: Request, res: Response) => {
